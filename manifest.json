@@ -1,0 +1,17 @@
+{
+    "name": "Codeship start build",
+    "version": "0.1",
+    "manifest_version": 2,
+
+    "description": "Adds option to start a queued build.",
+    "icons": { "16": "icon16.png",
+               "48": "icon48.png",
+              "128": "icon128.png" },
+
+    "content_scripts": [
+        {
+            "matches": ["http://app.codeship.com/*", "https://app.codeship.com/*"],
+            "js": ["codeship.js"]
+        }
+    ]
+}
