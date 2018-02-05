@@ -34,7 +34,6 @@ const doXHR = (url, what) => {
 
 let initiated = false
 const init = () => {
-  console.log('init')
   if (initiated) return false
   const builds = document.querySelectorAll('.build-item')
   if (builds.length > 0) initiated = true
@@ -46,4 +45,4 @@ const init = () => {
 }
 
 init()
-document.querySelector('div[data-builds], div[data-build]').addEventListener('DOMSubtreeModified', init)
+document.querySelector('div[data-content=organizations-show], div[data-build]').addEventListener('DOMSubtreeModified', init)
