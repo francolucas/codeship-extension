@@ -45,4 +45,4 @@ const init = () => {
 }
 
 init()
-document.querySelector('div[data-content=organizations-show], div[data-build]').addEventListener('DOMSubtreeModified', init)
+document.querySelector('div[data-content=projects-show], div[data-content=organizations-show], div[data-build]').addEventListener('DOMSubtreeModified', init)
